@@ -1,0 +1,963 @@
+<!DOCTYPE html>
+<html lang="ru">
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+
+		<!-- Адаптирование страницы для мобильных устройств -->
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+		<!-- Запрет распознования номера телефона -->
+		<meta name="format-detection" content="telephone=no">
+		<meta name="SKYPE_TOOLBAR" content ="SKYPE_TOOLBAR_PARSER_COMPATIBLE">
+
+		<!-- Заголовок страницы -->
+		<title>Заголовок страницы</title>
+
+		<!-- Данное значение часто используют(использовали) поисковые системы -->
+		<meta name="description" content="">
+		<meta name="keywords" content="">
+
+		<!-- Традиционная иконка сайта, размер 16x16, прозрачность поддерживается. Рекомендуемый формат: .ico или .png -->
+		<link rel="shortcut icon" href="favicon.png">
+
+		<!-- Изменение цвета панели моб. браузера -->
+		<meta name="msapplication-TileColor" content="#c72">
+		<meta name="theme-color" content="#c72">
+
+		<!-- Подключение шрифтов с гугла -->
+		<link rel="preconnect" href="https://fonts.gstatic.com">
+		<link href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,500;1,500&display=swap" rel="stylesheet">
+
+		<!-- Подключение файлов стилей -->
+		<link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+		<link rel="stylesheet" href="css/swiper.css">
+		<link rel="stylesheet" href="css/datepicker.min.css">
+		<link rel="stylesheet" href="css/ion.rangeSlider.css">
+		<link rel="stylesheet" href="css/fancybox.css">
+		<link rel="stylesheet" href="css/styles.css">
+
+		<link rel="stylesheet" href="css/response_1279.css" media="print, (max-width: 1279px)">
+		<link rel="stylesheet" href="css/response_1023.css" media="print, (max-width: 1023px)">
+		<link rel="stylesheet" href="css/response_767.css" media="print, (max-width: 767px)">
+		<link rel="stylesheet" href="css/response_479.css" media="(max-width: 479px)">
+	</head>
+
+	<body>
+		<div class="wrap">
+			<div class="main">
+				<header>
+					<button class="close"></button>
+
+					<div class="mob_scroll">
+						<div class="info">
+							<div class="cont row">
+								<a href="/" class="logo">
+									<img src="images/logo.png" alt="">
+								</a>
+
+								<div class="phone">
+									<img src="images/ic_phone.svg" alt="" class="icon">
+									<a href="tel:+74993222248">+7 (499) 322-22-48</a>
+									<div class="exp">Круглосуточно</div>
+								</div>
+
+								<div class="instagram">
+									<a href="/" target="_blank" rel="noopener nofollow">
+										<img src="images/ic_instagram.svg" alt="" class="icon">
+										<span>@vegafood</span>
+									</a>
+								</div>
+
+								<div class="links">
+									<div class="account">
+										<a href="/">
+											<div class="icon">
+												<img src="images/ic_account.svg" alt="">
+											</div>
+
+											<div class="name">
+												<svg class="big"><use xlink:href="images/sprite.svg#ic_account_name2"></use></svg>
+											</div>
+
+											<div class="user">Сергей Петров</div>
+										</a>
+									</div>
+
+									<div class="favorite">
+										<a href="/">
+											<div class="icon">
+												<img src="images/ic_favorite.svg" alt="">
+											</div>
+
+											<div class="name">
+												<svg><use xlink:href="images/sprite.svg#ic_favorite_name"></use></svg>
+											</div>
+										</a>
+									</div>
+
+									<div class="cart">
+										<a href="/">
+											<div class="icon">
+												<img src="images/ic_cart.svg" alt="">
+											</div>
+
+											<div class="name">
+												<svg><use xlink:href="images/sprite.svg#ic_cart_name"></use></svg>
+												<div class="count">2</div>
+											</div>
+
+											<div class="price">149 300 Р.</div>
+										</a>
+									</div>
+								</div>
+							</div>
+						</div>
+
+
+						<div class="bottom">
+							<div class="cont row">
+								<nav class="menu row">
+									<div class="item">
+										<a class="sub_link active">
+											<img src="images/bg_menu1.png" alt="" class="bg">
+											<img src="images/bg_menu1_2.png" alt="" class="bg bg2">
+											<span>КАТАЛОГ</span>
+										</a>
+
+										<div class="sub_menu">
+											<div>
+												<a href="/" class="sub_link">Бакалея</a>
+
+												<div class="sub_menu">
+													<div><a href="/">Вареные колбасы</a></div>
+													<div><a href="/">Ливерные колбасы</a></div>
+													<div><a href="/">Сырокопченые колбасы</a></div>
+													<div><a href="/">Полукопченые колбасы</a></div>
+													<div><a href="/">Варено-копченые колбасы</a></div>
+												</div>
+											</div>
+
+											<div>
+												<a href="/" class="sub_link">Растительные колбасы и мясо</a>
+
+												<div class="sub_menu">
+													<div><a href="/">Вареные колбасы</a></div>
+													<div><a href="/">Ливерные колбасы</a></div>
+													<div><a href="/">Сырокопченые колбасы</a></div>
+													<div><a href="/">Полукопченые колбасы</a></div>
+													<div><a href="/">Варено-копченые колбасы</a></div>
+												</div>
+											</div>
+
+											<div>
+												<a href="/" class="sub_link">Бакалея</a>
+
+												<div class="sub_menu">
+													<div><a href="/">Вареные колбасы</a></div>
+													<div><a href="/">Ливерные колбасы</a></div>
+													<div><a href="/">Сырокопченые колбасы</a></div>
+													<div><a href="/">Полукопченые колбасы</a></div>
+													<div><a href="/">Варено-копченые колбасы</a></div>
+												</div>
+											</div>
+
+											<div>
+												<a href="/" class="sub_link">Веганские полуфабрикаты</a>
+
+												<div class="sub_menu">
+													<div><a href="/">Вареные колбасы</a></div>
+													<div><a href="/">Ливерные колбасы</a></div>
+													<div><a href="/">Сырокопченые колбасы</a></div>
+													<div><a href="/">Полукопченые колбасы</a></div>
+													<div><a href="/">Варено-копченые колбасы</a></div>
+												</div>
+											</div>
+
+											<div>
+												<a href="/" class="sub_link">Азиатские продукты</a>
+
+												<div class="sub_menu">
+													<div><a href="/">Вареные колбасы</a></div>
+													<div><a href="/">Ливерные колбасы</a></div>
+													<div><a href="/">Сырокопченые колбасы</a></div>
+													<div><a href="/">Полукопченые колбасы</a></div>
+													<div><a href="/">Варено-копченые колбасы</a></div>
+												</div>
+											</div>
+
+											<div>
+												<a href="/" class="sub_link">Растительное молоко</a>
+
+												<div class="sub_menu">
+													<div><a href="/">Вареные колбасы</a></div>
+													<div><a href="/">Ливерные колбасы</a></div>
+													<div><a href="/">Сырокопченые колбасы</a></div>
+													<div><a href="/">Полукопченые колбасы</a></div>
+													<div><a href="/">Варено-копченые колбасы</a></div>
+												</div>
+											</div>
+										</div>
+									</div>
+
+									<div class="item">
+										<a href="/">
+											<img src="images/ic_menu1.svg" alt="" class="icon">
+											<span>ДОСТАВКА И ОПЛАТА</span>
+										</a>
+									</div>
+
+									<div class="item">
+										<a href="/">
+											<img src="images/ic_menu2.svg" alt="" class="icon">
+											<span>АКЦИИ</span>
+										</a>
+									</div>
+
+									<div class="item">
+										<a href="/">
+											<img src="images/ic_menu3.svg" alt="" class="icon">
+											<span>О НАС</span>
+										</a>
+									</div>
+								</nav>
+
+								<div class="search">
+									<form action="">
+										<input type="text" name="" value="" class="input" placeholder="Поиск">
+
+										<button type="submit" class="submit_btn">
+											<svg class="icon"><use xlink:href="images/sprite.svg#ic_search"></use></svg>
+										</button>
+									</form>
+								</div>
+							</div>
+						</div>
+					</div>
+				</header>
+
+
+				<section class="mob_header">
+					<div class="cont">
+						<a href="/" class="logo">
+							<img src="images/logo.png" alt="">
+						</a>
+
+						<div class="phone">
+							<img src="images/ic_phone.svg" alt="" class="icon">
+							<a href="tel:+74993222248">+7 (499) 322-22-48</a>
+							<div class="exp">Круглосуточно</div>
+						</div>
+
+						<div class="links">
+							<div class="account">
+								<button class="modal_link" data-content="#login_modal">
+									<img src="images/ic_account.svg" alt="">
+								</button>
+							</div>
+
+							<div class="favorite">
+								<a href="/">
+									<img src="images/ic_favorite.svg" alt="">
+								</a>
+							</div>
+
+							<div class="cart">
+								<a href="/">
+									<img src="images/ic_cart.svg" alt="">
+									<div class="count">2</div>
+								</a>
+							</div>
+						</div>
+
+						<button class="mob_menu_btn">
+							<span></span>
+						</button>
+					</div>
+				</section>
+
+
+				<section class="page_head">
+					<div class="cont">
+						<div class="breadcrumbs">
+							<a href="/">Главная</a> <span class="sep"></span>
+							<span class="current">Личный кабинет</span>
+						</div>
+
+						<h1 class="page_title">Личный кабинет</h1>
+					</div>
+				</section>
+
+
+				<section class="lk_info block tabs_container">
+					<div class="cont">
+						<div class="tabs">
+							<button data-content="#lk_tab1" data-level="level1" class="active">
+								<span>Профиль</span>
+								<img src="images/bg_product_tab2.png" alt="" class="bg">
+								<img src="images/bg_product_tab2_2.png" alt="" class="bg bg2">
+							</button>
+
+							<button data-content="#lk_tab2" data-level="level1">
+								<span>Заказы</span>
+								<img src="images/bg_product_tab2.png" alt="" class="bg">
+								<img src="images/bg_product_tab2_2.png" alt="" class="bg bg2">
+							</button>
+
+							<button data-content="#lk_tab3" data-level="level1">
+								<span>SMS-рассылки</span>
+								<img src="images/bg_product_tab3.png" alt="" class="bg">
+								<img src="images/bg_product_tab3_2.png" alt="" class="bg bg2">
+							</button>
+						</div>
+
+
+						<div class="tab_content level1 active" id="lk_tab1">
+							<div class="data">
+								<form action="" class="form">
+									<div class="cols">
+										<div class="col">
+											<div class="title">Мои данные</div>
+
+											<div class="line">
+												<div class="field">
+													<input type="text" name="" value="Петров" class="input">
+												</div>
+											</div>
+
+											<div class="line">
+												<div class="field">
+													<input type="text" name="" value="Сергей" class="input">
+												</div>
+											</div>
+
+											<div class="line">
+												<div class="field">
+													<input type="text" name="" value="Федорович" class="input">
+												</div>
+											</div>
+
+											<div class="line">
+												<div class="field">
+													<input type="email" name="" value="petroff@gmail.com" class="input">
+												</div>
+											</div>
+
+											<div class="line">
+												<div class="field">
+													<input type="tel" name="" value="+7 495 369-56-84" class="input">
+												</div>
+											</div>
+
+											<div class="line gender">
+												<div class="field">
+													<div class="label">Пол</div>
+
+													<div>
+														<input type="radio" name="gender" id="gender_check1" checked>
+														<label for="gender_check1">Мужской</label>
+													</div>
+
+													<div>
+														<input type="radio" name="gender" id="gender_check2">
+														<label for="gender_check2">Женский</label>
+													</div>
+												</div>
+											</div>
+
+											<div class="line">
+												<div class="field">
+													<input type="text" name="" value="21.09.1979" class="input date_input">
+													<img src="images/ic_calendar.svg" alt="" class="icon">
+												</div>
+											</div>
+										</div>
+
+
+										<div class="col">
+											<div class="title">Изменить пароль</div>
+
+											<div class="line">
+												<div class="field">
+													<input type="password" name="" value="" class="input" placeholder="Новый пароль">
+												</div>
+											</div>
+
+											<div class="line">
+												<div class="field">
+													<input type="password" name="" value="" class="input" placeholder="Новый пароль еще раз">
+												</div>
+											</div>
+										</div>
+									</div>
+
+
+									<div class="line agree">
+										<div class="field">
+											<input type="checkbox" name="agree" id="agree_check">
+											<label for="agree_check">Согласен на обработку персональных данных</label>
+										</div>
+									</div>
+
+									<div class="submit">
+										<button type="submit" class="submit_btn">СОХРАНИТЬ ИЗМЕНЕНИЯ</button>
+									</div>
+								</form>
+							</div>
+						</div>
+
+
+						<div class="tab_content level1" id="lk_tab2">
+							<div class="orders accordion">
+								<div class="order item">
+									<div class="head">
+										<div class="icon"></div>
+										<div class="number">46458823</div>
+										<div class="date">18.01.2021</div>
+										<div class="status orange">ОТМЕНЕН</div>
+										<div class="price">2 560 Р.</div>
+									</div>
+
+									<div class="data">
+										<div class="cart_info">
+											<div class="products">
+												<table>
+													<thead>
+														<tr>
+															<th colspan="2">ТОВАР</th>
+															<th>ЦЕНА</th>
+															<th>КОЛ-ВО, ШТ.</th>
+															<th>СТОИМОСТЬ</th>
+														</tr>
+													</thead>
+
+													<tbody>
+														<tr>
+															<td class="thumb">
+																<a href="/">
+																<img data-src="images/tmp/cart_product_thumb.jpg" alt="" class="lozad">
+															</a>
+															</td>
+
+															<td class="info">
+																<div class="name">
+																	<a href="/">Колбаса с морковью веганская Vegafood</a>
+																</div>
+
+																<div class="weight">490 гр.</div>
+															</td>
+
+															<td class="price" data-column="ЦЕНА" data-price="319">
+																<div>319 Р.</div>
+																<div class="old">395 Р.</div>
+															</td>
+
+															<td class="amount" data-column="КОЛ-ВО, ШТ.">
+																<span>1</span>
+															</td>
+
+															<td class="price total" data-column="СТОИМОСТЬ"><span>339</span> Р.</td>
+														</tr>
+
+
+														<tr>
+															<td class="thumb">
+																<a href="/">
+																<img data-src="images/tmp/cart_product_thumb2.jpg" alt="" class="lozad">
+															</a>
+															</td>
+
+															<td class="info">
+																<div class="name">
+																	<a href="/">Протеиновый батончик «Вишнёвый пай» R.A.W. LIFE</a>
+																</div>
+
+																<div class="weight">43 гр.</div>
+															</td>
+
+															<td class="price" data-column="ЦЕНА" data-price="135">
+																<div>135 Р.</div>
+															</td>
+
+															<td class="amount" data-column="КОЛ-ВО, ШТ.">
+																<span>1</span>
+															</td>
+
+															<td class="price total" data-column="СТОИМОСТЬ"><span>405</span> Р.</td>
+														</tr>
+
+
+														<tr>
+															<td class="thumb">
+																<a href="/">
+																<img data-src="images/tmp/cart_product_thumb3.jpg" alt="" class="lozad">
+															</a>
+															</td>
+
+															<td class="info">
+																<div class="name">
+																	<a href="/">Эритрит Polezzno</a>
+																</div>
+
+																<div class="weight">300 гр.</div>
+															</td>
+
+															<td class="price" data-column="ЦЕНА" data-price="249">
+																<div>249 Р.</div>
+															</td>
+
+															<td class="amount" data-column="КОЛ-ВО, ШТ.">
+																<span>1</span>
+															</td>
+
+															<td class="price total" data-column="СТОИМОСТЬ"><span>249</span> Р.</td>
+														</tr>
+													</tbody>
+												</table>
+											</div>
+										</div>
+									</div>
+								</div>
+
+
+								<div class="order item">
+									<div class="head">
+										<div class="icon"></div>
+										<div class="number">46458823</div>
+										<div class="date">18.01.2021</div>
+										<div class="status green">ЗАВЕРШЕН</div>
+										<div class="price">2 560 Р.</div>
+									</div>
+
+									<div class="data">
+										<div class="cart_info">
+											<div class="products">
+												<table>
+													<thead>
+														<tr>
+															<th colspan="2">ТОВАР</th>
+															<th>ЦЕНА</th>
+															<th>КОЛ-ВО, ШТ.</th>
+															<th>СТОИМОСТЬ</th>
+														</tr>
+													</thead>
+
+													<tbody>
+														<tr>
+															<td class="thumb">
+																<a href="/">
+																<img data-src="images/tmp/cart_product_thumb.jpg" alt="" class="lozad">
+															</a>
+															</td>
+
+															<td class="info">
+																<div class="name">
+																	<a href="/">Колбаса с морковью веганская Vegafood</a>
+																</div>
+
+																<div class="weight">490 гр.</div>
+															</td>
+
+															<td class="price" data-column="ЦЕНА" data-price="319">
+																<div>319 Р.</div>
+																<div class="old">395 Р.</div>
+															</td>
+
+															<td class="amount" data-column="КОЛ-ВО, ШТ.">
+																<span>1</span>
+															</td>
+
+															<td class="price total" data-column="СТОИМОСТЬ"><span>339</span> Р.</td>
+														</tr>
+
+
+														<tr>
+															<td class="thumb">
+																<a href="/">
+																<img data-src="images/tmp/cart_product_thumb2.jpg" alt="" class="lozad">
+															</a>
+															</td>
+
+															<td class="info">
+																<div class="name">
+																	<a href="/">Протеиновый батончик «Вишнёвый пай» R.A.W. LIFE</a>
+																</div>
+
+																<div class="weight">43 гр.</div>
+															</td>
+
+															<td class="price" data-column="ЦЕНА" data-price="135">
+																<div>135 Р.</div>
+															</td>
+
+															<td class="amount" data-column="КОЛ-ВО, ШТ.">
+																<span>1</span>
+															</td>
+
+															<td class="price total" data-column="СТОИМОСТЬ"><span>405</span> Р.</td>
+														</tr>
+
+
+														<tr>
+															<td class="thumb">
+																<a href="/">
+																<img data-src="images/tmp/cart_product_thumb3.jpg" alt="" class="lozad">
+															</a>
+															</td>
+
+															<td class="info">
+																<div class="name">
+																	<a href="/">Эритрит Polezzno</a>
+																</div>
+
+																<div class="weight">300 гр.</div>
+															</td>
+
+															<td class="price" data-column="ЦЕНА" data-price="249">
+																<div>249 Р.</div>
+															</td>
+
+															<td class="amount" data-column="КОЛ-ВО, ШТ.">
+																<span>1</span>
+															</td>
+
+															<td class="price total" data-column="СТОИМОСТЬ"><span>249</span> Р.</td>
+														</tr>
+													</tbody>
+												</table>
+											</div>
+										</div>
+									</div>
+								</div>
+
+
+								<div class="order item">
+									<div class="head">
+										<div class="icon"></div>
+										<div class="number">46458823</div>
+										<div class="date">18.01.2021</div>
+										<div class="status">В ОБРАБОТКЕ</div>
+										<div class="price">2 560 Р.</div>
+									</div>
+
+									<div class="data">
+										<div class="cart_info">
+											<div class="products">
+												<table>
+													<thead>
+														<tr>
+															<th colspan="2">ТОВАР</th>
+															<th>ЦЕНА</th>
+															<th>КОЛ-ВО, ШТ.</th>
+															<th>СТОИМОСТЬ</th>
+														</tr>
+													</thead>
+
+													<tbody>
+														<tr>
+															<td class="thumb">
+																<a href="/">
+																<img data-src="images/tmp/cart_product_thumb.jpg" alt="" class="lozad">
+															</a>
+															</td>
+
+															<td class="info">
+																<div class="name">
+																	<a href="/">Колбаса с морковью веганская Vegafood</a>
+																</div>
+
+																<div class="weight">490 гр.</div>
+															</td>
+
+															<td class="price" data-column="ЦЕНА" data-price="319">
+																<div>319 Р.</div>
+																<div class="old">395 Р.</div>
+															</td>
+
+															<td class="amount" data-column="КОЛ-ВО, ШТ.">
+																<span>1</span>
+															</td>
+
+															<td class="price total" data-column="СТОИМОСТЬ"><span>339</span> Р.</td>
+														</tr>
+
+
+														<tr>
+															<td class="thumb">
+																<a href="/">
+																<img data-src="images/tmp/cart_product_thumb2.jpg" alt="" class="lozad">
+															</a>
+															</td>
+
+															<td class="info">
+																<div class="name">
+																	<a href="/">Протеиновый батончик «Вишнёвый пай» R.A.W. LIFE</a>
+																</div>
+
+																<div class="weight">43 гр.</div>
+															</td>
+
+															<td class="price" data-column="ЦЕНА" data-price="135">
+																<div>135 Р.</div>
+															</td>
+
+															<td class="amount" data-column="КОЛ-ВО, ШТ.">
+																<span>1</span>
+															</td>
+
+															<td class="price total" data-column="СТОИМОСТЬ"><span>405</span> Р.</td>
+														</tr>
+
+
+														<tr>
+															<td class="thumb">
+																<a href="/">
+																<img data-src="images/tmp/cart_product_thumb3.jpg" alt="" class="lozad">
+															</a>
+															</td>
+
+															<td class="info">
+																<div class="name">
+																	<a href="/">Эритрит Polezzno</a>
+																</div>
+
+																<div class="weight">300 гр.</div>
+															</td>
+
+															<td class="price" data-column="ЦЕНА" data-price="249">
+																<div>249 Р.</div>
+															</td>
+
+															<td class="amount" data-column="КОЛ-ВО, ШТ.">
+																<span>1</span>
+															</td>
+
+															<td class="price total" data-column="СТОИМОСТЬ"><span>249</span> Р.</td>
+														</tr>
+													</tbody>
+												</table>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+
+
+						<div class="tab_content level1" id="lk_tab3">
+							<div class="data">
+								<form action="" class="form mini">
+									<div class="title">Отписка от SMS-рассылки</div>
+
+									<div class="line">
+										<div class="field">
+											<input type="text" name="" value="" class="input" placeholder="ФИО *">
+
+											<div class="rule">
+												<div class="point"></div>
+												<div class="text">Чтобы отписаться от SMS-рассылки, пожалуйста<br> заполните форму.</div>
+											</div>
+										</div>
+									</div>
+
+									<div class="line">
+										<div class="field">
+											<input type="tel" name="" value="" class="input" placeholder="Номер телефона *">
+										</div>
+									</div>
+
+									<div class="line">
+										<div class="field">
+											<textarea name="" placeholder="Причина отписки"></textarea>
+										</div>
+									</div>
+
+									<div class="submit">
+										<button type="submit" class="submit_btn">ОТПИСАТЬСЯ</button>
+									</div>
+								</form>
+							</div>
+						</div>
+
+
+						<div class="logout">
+							<a href="/" class="link">
+								<svg class="icon"><use xlink:href="images/sprite.svg#ic_pag_arrow"></use></svg>
+								<span>ВЫЙТИ ИЗ КАБИНЕТА</span>
+							</a>
+						</div>
+					</div>
+				</section>
+
+
+				<section class="info_blocks">
+					<div class="cont">
+						<div class="row">
+							<div class="item delivery">
+								<div class="icon">
+									<img data-src="images/ic_delivery.svg" alt="" class="lozad">
+								</div>
+								<div>Бесплатная доставка при заказе<br> от 799 Р.</div>
+							</div>
+
+							<div class="item vegan">
+								<div class="icon">
+									<img data-src="images/ic_vegan.png" alt="" class="lozad">
+								</div>
+								<div>100% vegan</div>
+							</div>
+
+							<div class="item phone">
+								<div class="icon">
+									<img data-src="images/ic_phone.svg" alt="" class="lozad">
+								</div>
+								<div>Связаться с нами<br> <a href="tel:+74993222248">+7 (499) 322-22-48</a></div>
+							</div>
+						</div>
+					</div>
+				</section>
+			</div>
+
+
+			<footer>
+				<div class="info">
+					<div class="cont row">
+						<div class="col_left">
+							<div class="logo">
+								<img src="images/logo2.png" alt="">
+							</div>
+
+							<div class="socials">
+								<a href="/" target="_blank" rel="noopener nofollow">
+									<img src="images/ic_soc_instagram.svg" alt="">
+								</a>
+
+								<a href="/" target="_blank" rel="noopener nofollow">
+									<img src="images/ic_soc_facebook.svg" alt="">
+								</a>
+							</div>
+						</div>
+
+
+						<div class="links">
+							<div class="title">ПОКУПАТЕЛЮ</div>
+
+							<div class="items">
+								<div><a href="/">О нас</a></div>
+								<div><a href="/">Доставка и оплата</a></div>
+								<div><a href="/">Акции</a></div>
+								<div><a href="/">Контакты</a></div>
+							</div>
+						</div>
+
+
+						<div class="contacts">
+							<div class="title">КОНТАКТЫ</div>
+
+							<div class="phone">
+								<div class="icon">
+									<svg><use xlink:href="images/sprite.svg#ic_phone"></use></svg>
+								</div>
+								<div><a href="tel:+74993222248">+7 (499) 322-22-48</a></div>
+							</div>
+
+							<div class="email">
+								<div class="icon">
+									<svg><use xlink:href="images/sprite.svg#ic_email"></use></svg>
+								</div>
+								<div><a href="mailto:nfo@vegafood.ru">nfo@vegafood.ru</a></div>
+							</div>
+
+							<div class="time">
+								<div><span>Прием заказов:</span> круглосуточно, без выходных</div>
+								<div><span>Время доставки:</span> 09:00–22:00 без выходных</div>
+							</div>
+						</div>
+
+
+						<div class="subscribe">
+							<div class="title">ПОДПИСАТЬСЯ НА РАССЫЛКУ</div>
+
+							<div class="desc">Чтобы быть в курсе новинок, акций и спецпредложений</div>
+
+							<form action="">
+								<div class="field">
+									<input type="email" name="" value="" class="input" placeholder="Ваш e-mail">
+								</div>
+
+								<button type="submit" class="submit_btn">OK</button>
+
+								<div class="agree">Нажимая на кнопку, я соглашаюсь на обработку моих персональных данных и принимаю <a href="/" target="_blank">политику конфиденциальности</a>.</div>
+							</form>
+						</div>
+					</div>
+				</div>
+
+
+				<div class="bottom">
+					<div class="cont row">
+						<div class="copyright">&copy; 2021 Интернет-магазин Vegafood</div>
+
+						<div class="privacy_policy">
+							<a href="/">Политика конфиденциальности</a>
+						</div>
+
+						<div class="creator">
+							<a href="/" rel="noopener">Разработка сайта — <span>Точка.ру</span></a>
+						</div>
+					</div>
+				</div>
+			</footer>
+
+
+			<div class="overlay"></div>
+
+			<div class="buttonUp">
+				<button>
+					<img src="images/ic_buttonUp.svg" alt="">
+					<img src="images/ic_buttonUp_h.svg" alt="">
+				</button>
+			</div>
+		</div>
+
+
+		<div class="supports_error">
+			Ваш браузер устарел рекомендуем обновить его до последней версии<br> или использовать другой более современный.
+		</div>
+
+
+		<section class="modal" id="add_to_cart_success">
+			<div class="modal_title">Товар добавлен в корзину</div>
+
+			<div class="product">
+				<div class="thumb">
+					<img src="images/tmp/cart_product_thumb.jpg" alt="">
+				</div>
+
+				<div class="info">
+					<div class="name">Колбаса с морковью веганская Vegafood</a></div>
+
+					<div class="price">
+						<div>319 Р.</div>
+						<div class="old">395 Р.</div>
+					</div>
+
+					<div class="weight">490 гр.</div>
+				</div>
+			</div>
+		</section>
+
+
+		<!-- Подключение javascript файлов -->
+		<script src="js/jquery-3.5.0.min.js"></script>
+		<script src="js/lozad.min.js"></script>
+		<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+		<script src="js/inputmask.min.js"></script>
+		<script src="js/nice-select.js"></script>
+		<script src="js/ion.rangeSlider.min.js"></script>
+		<script src="js/datepicker.min.js"></script>
+		<script src="js/fancybox.min.js"></script>
+		<script src="js/sticky-kit.min.js"></script>
+		<script src="js/functions.js"></script>
+		<script src="js/scripts.js"></script>
+	</body>
+</html>

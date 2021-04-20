@@ -1,0 +1,857 @@
+@media print, (max-width: 1279px)
+{
+    /*-------------------
+        Global styles
+    -------------------*/
+    :root
+    {
+        --sidebar_width: 240px;
+        --font_size: 16px;
+        --font_size_title: 60px;
+        --font_size_title_small: 45px;
+    }
+
+
+    html.custom_scroll ::-webkit-scrollbar
+    {
+        width: 5px;
+        height: 5px;
+    }
+
+
+
+    /*----------
+        Tabs
+    -----------*/
+    .tabs
+    {
+        margin-bottom: 30px;
+    }
+
+
+    .tabs button
+    {
+        font-size: 22px;
+    }
+
+    .tabs button + button
+    {
+        margin-left: 30px;
+    }
+
+
+
+    /*--------------
+        ButtonUp
+    --------------*/
+    .buttonUp
+    {
+        right: 20px;
+    }
+
+
+
+    /*------------
+        Header
+    ------------*/
+    header
+    {
+        padding: 30px 0;
+    }
+
+
+    header .info .cont
+    {
+        align-items: center;
+        align-content: center;
+    }
+
+
+    header .bottom
+    {
+        padding-top: 30px;
+    }
+
+
+    header .logo
+    {
+        position: relative;
+
+        width: 265px;
+        max-width: none;
+        margin: 0;
+        margin-right: auto;
+    }
+
+    header .logo img
+    {
+        max-width: 100%;
+    }
+
+
+    header .phone
+    {
+        margin-top: 0;
+    }
+
+    header .phone a
+    {
+        font-size: 21px;
+    }
+
+
+    header .instagram
+    {
+        display: none;
+    }
+
+
+    header .links
+    {
+        width: auto;
+        padding: 0;
+    }
+
+    header .links > * + *
+    {
+        margin-left: 40px;
+    }
+
+    header .links .icon
+    {
+        height: 48px;
+    }
+
+    header .links .account .name svg
+    {
+        height: 28px;
+    }
+
+    header .links .favorite .name svg,
+    header .links .cart .name svg
+    {
+        height: 30px;
+    }
+
+
+    header .menu .item + .item
+    {
+        margin-left: 35px;
+    }
+
+    header .menu .item > a
+    {
+        font-size: 29px;
+    }
+
+
+    header .menu .sub_menu a
+    {
+        font-size: 16px;
+        line-height: 18px;
+
+        min-height: 50px;
+        padding: 12px 44px 12px 20px;
+    }
+
+
+    header .search
+    {
+        width: 300px;
+    }
+
+
+    header.fixed
+    {
+        padding-bottom: 24px;
+    }
+
+
+
+    /*-------------
+        Sidebar
+    -------------*/
+
+
+
+    /*---------------
+        Page head
+    ---------------*/
+    .page_head
+    {
+        margin-top: 0;
+    }
+
+
+    .page_title.with_img
+    {
+        min-height: 153px;
+    }
+
+    .page_title.with_img img
+    {
+        left: 50%;
+
+        width: auto;
+
+        transform: translateX(-50%);
+    }
+
+
+
+    /*----------------
+        Block head
+    ----------------*/
+    .block_head
+    {
+        margin-bottom: 30px;
+    }
+
+
+
+    /*------------------
+        Form elements
+    ------------------*/
+
+
+
+    /*----------------
+        Typography
+    ----------------*/
+    .text_block h1,
+    .text_block .title
+    {
+        font-size: 60px;
+
+        margin-bottom: 30px;
+    }
+
+    .text_block h2
+    {
+        font-size: 50px;
+    }
+
+    .text_block h3
+    {
+        font-size: 45px;
+    }
+
+
+    .text_block .slider .slide
+    {
+        min-height: 360px;
+    }
+
+    .text_block .slider .slide .title
+    {
+        width: 229px;
+        height: 222px;
+    }
+
+    .text_block .slider .swiper-pagination
+    {
+        margin-top: 25px;
+    }
+
+
+    .text_block figure .img
+    {
+        width: calc(50% - 25px);
+    }
+
+    .text_block figure figcaption
+    {
+        width: calc(50% - 25px);
+        padding-bottom: 35px;
+    }
+
+
+    .text_block blockquote,
+    .text_block q
+    {
+        font-size: 26px;
+        line-height: 32px;
+
+        padding: 30px 100px;
+    }
+
+    .text_block blockquote:before,
+    .text_block q:before
+    {
+        left: 0;
+    }
+
+    .text_block blockquote:after,
+    .text_block q:after
+    {
+        right: 0;
+    }
+
+
+    .text_block .cols .col
+    {
+        width: calc(50% - 25px);
+    }
+
+
+    .text_block .message
+    {
+        font-size: 19px;
+
+        padding: 40px 0;
+    }
+
+
+
+    /*-----------------
+        Main slider
+    -----------------*/
+    .main_slider
+    {
+        margin-top: 20px;
+    }
+
+    .main_slider .slide .bg
+    {
+        left: -40px;
+
+        width: calc(100% + 80px);
+    }
+
+    .main_slider .slide .info
+    {
+        margin: 0;
+    }
+
+    .main_slider .slide .free_delivery
+    {
+        left: 20px;
+    }
+
+
+    .main_slider .swiper-button-prev
+    {
+        left: 10px;
+
+        margin-left: 0;
+    }
+
+    .main_slider .swiper-button-next
+    {
+        right: 10px;
+
+        margin-right: 0;
+    }
+
+
+
+    /*----------------
+        Categories
+    ----------------*/
+    .categories
+    {
+        padding: 30px 0;
+    }
+
+    .categories:before
+    {
+        width: 680px;
+        height: 680px;
+    }
+
+
+    .categories .category
+    {
+        font-size: 30px;
+        line-height: 30px;
+    }
+
+    .categories .category .thumb
+    {
+        height: 172px;
+    }
+
+
+
+    /*-------------
+        Banners
+    -------------*/
+    .banners
+    {
+        padding: 50px 0 100px;
+    }
+
+
+    .banners .row
+    {
+        margin-bottom: -20px;
+        margin-left: -20px;
+    }
+
+    .banners .row > *
+    {
+        width: calc(50% - 20px);
+        margin-bottom: 20px;
+        margin-left: 20px;
+    }
+
+    .banners .row:before
+    {
+        display: none;
+    }
+
+
+    .banners .banner
+    {
+        min-height: 180px;
+        padding: 35px;
+    }
+
+    .banners .banner .title
+    {
+        font-size: 32px;
+        line-height: 34px;
+
+        width: 220px;
+    }
+
+    .banners .banner .title small
+    {
+        font-size: 19px;
+        line-height: 21px;
+    }
+
+    .banners .banner .persents
+    {
+        right: 175px;
+        bottom: 18px;
+    }
+
+
+
+    /*------------
+        Brands
+    ------------*/
+    .brands .data
+    {
+        padding: 50px 0;
+    }
+
+
+
+    /*----------------
+        About info
+    ----------------*/
+    .about_info
+    {
+        padding: 80px 0 90px;
+    }
+
+
+    .about_info .info
+    {
+        width: calc(50% - 20px);
+    }
+
+    .about_info .info .title
+    {
+        font-size: 50px;
+        line-height: 45px;
+    }
+
+    .about_info .info .text_block
+    {
+        margin-top: 25px;
+    }
+
+
+    .about_info .img
+    {
+        width: calc(50% - 20px);
+        padding-bottom: 400px;
+    }
+
+
+
+    /*------------
+        Stocks
+    ------------*/
+    .stocks .data
+    {
+        padding: 70px 0 60px;
+    }
+
+
+    .stocks .swiper-container
+    {
+        padding: 0 48px;
+    }
+
+    .stocks .swiper-button-prev
+    {
+        left: 0;
+    }
+
+    .stocks .swiper-button-next
+    {
+        right: 0;
+    }
+
+
+    .stocks .row
+    {
+        margin-bottom: -20px;
+        margin-left: -20px;
+    }
+
+    .stocks .row > *
+    {
+        width: calc(25% - 20px);
+        margin-bottom: 20px;
+        margin-left: 20px;
+    }
+
+
+    .stocks .stock .name
+    {
+        line-height: 22px;
+    }
+
+
+
+    /*-----------------
+        Info blocks
+    -----------------*/
+    .info_blocks .item
+    {
+        font-size: 17px;
+        line-height: 23px;
+
+        padding: 35px 30px 55px;
+    }
+
+
+
+    /*---------------
+        Cart info
+    ---------------*/
+    .cart_info .min_price
+    {
+        font-size: 22px;
+        line-height: 26px;
+
+        padding-right: 248px;
+        padding-left: 30px;
+
+        text-align: left;
+
+        justify-content: flex-start;
+    }
+
+    .cart_info .min_price .continue_link
+    {
+        right: 30px;
+    }
+
+
+    .cart_info .steps
+    {
+        margin-bottom: 35px;
+    }
+
+    .cart_info .steps .step
+    {
+        font-size: 22px;
+        line-height: 28px;
+    }
+
+    .cart_info .steps .step + .step
+    {
+        margin-left: 60px;
+    }
+
+
+    .cart_info .products table th
+    {
+        font-size: 15px;
+    }
+
+
+    .cart_info .products table td.info .name
+    {
+        font-size: 17px;
+        line-height: 21px;
+
+        width: auto;
+    }
+
+    .cart_info .products table td.info .weight
+    {
+        line-height: 20px;
+
+        margin-top: 8px;
+    }
+
+    .cart_info .products table td.price
+    {
+        min-width: 90px;
+    }
+
+    .cart_info .products table td.amount
+    {
+        min-width: 120px;
+    }
+
+    .cart_info .products table td.price.total
+    {
+        min-width: 100px;
+    }
+
+
+
+    .cart_info .checkout .item .form
+    {
+        margin-bottom: -40px;
+        margin-left: -40px;
+        padding: 0 5px 30px;
+    }
+
+    .cart_info .checkout .item .form .col
+    {
+        width: calc(33.333% - 40px);
+        margin-bottom: 40px;
+        margin-left: 40px;
+    }
+
+    .cart_info .checkout .item .form .title
+    {
+        font-size: 22px;
+        line-height: 26px;
+    }
+
+
+    .cart_info .checkout .item .head
+    {
+        padding: 25px 60px 20px;
+    }
+
+    .cart_info .checkout .item .head .title
+    {
+        font-size: 22px;
+        line-height: 26px;
+    }
+
+
+
+    /*--------------
+        Products
+    --------------*/
+    .products .row
+    {
+        --products_count: 4;
+    }
+
+    .products .row > *
+    {
+        width: calc(25% - 20px);
+    }
+
+
+    .content .products .row
+    {
+        --products_count: 3;
+    }
+
+    .content .products .row > *
+    {
+        width: calc(33.333% - 20px);
+    }
+
+
+    .products .product .thumb
+    {
+        padding-bottom: 100%;
+    }
+
+
+
+    /*-----------------
+        Bottom text
+    -----------------*/
+    .bottom_text
+    {
+        padding-top: 60px;
+    }
+
+
+
+    /*------------------
+        Product info
+    ------------------*/
+    .product_info .images .big .slide a
+    {
+        height: 340px;
+    }
+
+
+    .product_info .images .thumbs
+    {
+        margin-top: 20px;
+    }
+
+    .product_info .images .thumbs > *
+    {
+        width: calc(25% - 20px);
+    }
+
+    .product_info .images .thumbs button
+    {
+        height: 90px;
+    }
+
+
+    .product_info .daily_norm .items > *
+    {
+        width: calc(25% - 1px);
+    }
+
+
+    .product_info .buy
+    {
+        margin-top: 25px;
+        padding-top: 22px;
+    }
+
+    .product_info .buy .price
+    {
+        font-size: 26px;
+    }
+
+    .product_info .buy .price .old
+    {
+        font-size: 18px;
+    }
+
+    .product_info .buy .buy_btn
+    {
+        margin-left: 30px;
+    }
+
+    .product_info .buy .quike_buy_btn
+    {
+        margin-left: 20px;
+    }
+
+
+
+    .product_info .description
+    {
+        margin-top: 50px;
+    }
+
+
+
+    .products .banner
+    {
+        min-height: 180px;
+        padding: 30px 35px;
+    }
+
+    .products .banner .title
+    {
+        font-size: 35px;
+        line-height: 39px;
+
+        width: 265px;
+    }
+
+    .products .banner .title small
+    {
+        font-size: 20px;
+        line-height: 24px;
+
+        margin-bottom: 2px;
+    }
+
+    .products .banner .desc
+    {
+        font-size: 18px;
+        line-height: 24px;
+
+        width: 400px;
+        margin-left: 40px;
+    }
+
+
+
+    /*-------------
+        LK info
+    -------------*/
+    .lk_info .tab_content > .data .form .cols
+    {
+        padding: 0 0 20px;
+    }
+
+
+    .lk_info .tab_content > .data .form .title
+    {
+        font-size: 22px;
+        line-height: 26px;
+    }
+
+
+    .lk_info .orders .order .head .price
+    {
+        width: 160px;
+    }
+
+
+    .lk_info .orders .cart_info .products table td.price
+    {
+        min-width: 130px;
+    }
+
+    .lk_info .orders .cart_info .products table td.amount
+    {
+        min-width: 150px;
+    }
+
+    .lk_info .orders .cart_info .products table td.price.total
+    {
+        min-width: 160px;
+    }
+
+
+
+    /*------------
+        Footer
+    ------------*/
+    footer .info
+    {
+        padding: 50px 0 40px;
+    }
+
+
+    footer .subscribe
+    {
+        width: 100%;
+        margin-top: 30px;
+    }
+
+    footer .subscribe form
+    {
+        width: 427px;
+        max-width: 100%;
+    }
+
+    footer .subscribe form .agree
+    {
+        margin-top: 12px;
+    }
+
+
+
+    /*-----------
+        PopUp
+    -----------*/
+}

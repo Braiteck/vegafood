@@ -1,0 +1,909 @@
+@media print, (max-width: 767px)
+{
+    /*-------------------
+        Global styles
+    -------------------*/
+    :root
+    {
+        --font_size: 15px;
+        --font_size_title: 40px;
+        --font_size_title_small: 40px;
+    }
+
+
+
+    /*----------
+        Tabs
+    -----------*/
+    .tabs
+    {
+        margin-bottom: 20px;
+    }
+
+    .tabs button
+    {
+        font-size: 18px;
+    }
+
+    .tabs button + button
+    {
+        margin-left: 20px;
+    }
+
+
+
+    /*--------------
+        ButtonUp
+    --------------*/
+    .buttonUp
+    {
+        right: 0;
+        bottom: 12px;
+        left: 0;
+
+        width: 44px;
+        margin: auto;
+    }
+
+
+
+    /*------------
+        Header
+    ------------*/
+    .mob_header
+    {
+        padding-bottom: 0;
+    }
+
+
+    .mob_header .logo,
+    .mob_header .logo img
+    {
+        width: 175px;
+    }
+
+
+    .mob_header .links
+    {
+        width: calc(75% + 20px);
+        margin-top: 15px;
+        margin-left: -20px;
+
+        border-top: 1px dashed #dad0c4;
+    }
+
+    .mob_header .links > *
+    {
+        width: 33.333%;
+    }
+
+    .mob_header .links > * + *
+    {
+        margin-left: 0;
+
+        border-left: 1px dashed #dad0c4;
+    }
+
+    .mob_header .links a,
+    .mob_header .links button
+    {
+        display: flex;
+
+        width: 100%;
+        height: 50px;
+        padding: 8px;
+
+        justify-content: center;
+        align-items: center;
+        align-content: center;
+        flex-wrap: wrap;
+    }
+
+    .mob_header .links .count
+    {
+        top: 4px;
+        right: 50%;
+
+        margin-right: -30px;
+    }
+
+
+    .mob_header .mob_menu_btn
+    {
+        display: flex;
+
+        width: calc(25% + 20px);
+        height: 50px;
+        margin-top: 15px;
+        margin-right: -20px;
+        margin-left: 0;
+
+        border-top: 1px dashed #dad0c4;
+        border-left: 1px dashed #dad0c4;
+
+        justify-content: center;
+        align-items: center;
+        align-content: center;
+        flex-wrap: wrap;
+    }
+
+    .mob_header .mob_menu_btn span
+    {
+        width: 33px;
+    }
+
+
+
+    /*-------------
+        Sidebar
+    -------------*/
+
+
+
+    /*---------------
+        Page head
+    ---------------*/
+    .page_title.with_img
+    {
+        min-height: 103px;
+        padding: 30px 0;
+    }
+
+
+
+    /*----------------
+        Block head
+    ----------------*/
+    .block_head
+    {
+        margin-bottom: 25px;
+    }
+
+
+
+    /*------------------
+        Form elements
+    ------------------*/
+
+
+
+    /*----------------
+        Typography
+    ----------------*/
+    .text_block
+    {
+        line-height: 23px;
+    }
+
+
+    .text_block h1,
+    .text_block .title
+    {
+        font-size: 40px;
+
+        margin-bottom: 25px;
+    }
+
+    .text_block h2
+    {
+        font-size: 35px;
+
+        margin-bottom: 25px;
+    }
+
+    .text_block h3
+    {
+        font-size: 30px;
+
+        margin-bottom: 16px;
+    }
+
+    .text_block h4
+    {
+        font-size: 26px;
+
+        margin-bottom: 16px;
+    }
+
+
+    .text_block .slider .slide
+    {
+        min-height: 260px;
+
+        border-radius: 20px;
+    }
+
+    .text_block .slider .slide .title
+    {
+        line-height: 100%;
+
+        width: 179px;
+        height: 172px;
+    }
+
+
+    .text_block figure .img
+    {
+        width: 100%;
+
+        order: 1;
+    }
+
+    .text_block figure figcaption
+    {
+        width: 100%;
+        margin-top: 20px;
+
+        order: 2;
+    }
+
+
+    .text_block blockquote,
+    .text_block q
+    {
+        font-size: 20px;
+        line-height: 26px;
+
+        margin-top: 25px;
+        margin-bottom: 25px;
+        padding: 20px 30px;
+    }
+
+
+    .text_block .cols .col
+    {
+        width: 100%;
+    }
+
+    .text_block .cols .col + .col
+    {
+        margin-top: 30px;
+    }
+
+
+    .text_block ul li,
+    .text_block ol li
+    {
+        padding-left: 28px;
+    }
+
+    .text_block ul li:before
+    {
+        top: 5px;
+    }
+
+    .text_block ul li + li,
+    .text_block ol li + li
+    {
+        margin-top: 8px;
+    }
+
+
+    .text_block .message
+    {
+        font-size: 17px;
+        line-height: 25px;
+
+        padding: 30px 0;
+    }
+
+
+    .text_block table td.mini
+    {
+        width: 120px;
+    }
+
+
+    .text_block .carousel .item
+    {
+        font-size: 14px;
+        line-height: 20px;
+    }
+
+    .text_block .carousel .item .desc
+    {
+        margin-top: 12px;
+    }
+
+
+
+    /*----------------
+        Categories
+    ----------------*/
+    .categories .category
+    {
+        font-size: 24px;
+        line-height: 26px;
+    }
+
+    .categories .category .thumb
+    {
+        height: 100px;
+    }
+
+
+
+    /*------------
+        Brands
+    ------------*/
+    .brands .block_title
+    {
+        font-size: 45px;
+    }
+
+
+
+    /*-------------
+        Banners
+    -------------*/
+    .banners .banner .persents
+    {
+        top: 0;
+        right: 0;
+
+        transform: scale(.75);
+    }
+
+
+
+    /*----------------
+        About info
+    ----------------*/
+    .about_info
+    {
+        padding-top: 60px;
+    }
+
+
+
+    .about_info .info
+    {
+        width: 100%;
+    }
+
+
+    .about_info .info .title
+    {
+        font-size: 36px;
+        line-height: 34px;
+    }
+
+    .about_info .info .title br
+    {
+        display: none;
+    }
+
+
+    .about_info .img
+    {
+        width: 100%;
+        margin-top: 30px;
+        padding-bottom: 80%;
+    }
+
+
+
+    /*------------
+        Stocks
+    ------------*/
+    .stocks .block_title
+    {
+        font-size: 45px;
+    }
+
+
+
+    /*-----------------
+        Info blocks
+    -----------------*/
+    .info_blocks .row
+    {
+        padding: 25px 0 45px;
+
+        flex-wrap: wrap;
+    }
+
+
+    .info_blocks .item
+    {
+        font-size: 15px;
+        line-height: 21px;
+
+        display: flex;
+
+        padding: 0;
+
+        text-align: left;
+
+        justify-content: space-between;
+        align-items: flex-start;
+        align-content: flex-start;
+        flex-wrap: wrap;
+    }
+
+    .info_blocks .item + .item
+    {
+        margin-top: 20px;
+
+        border-left: none;
+    }
+
+    .info_blocks .item .icon
+    {
+        width: 50px;
+        height: 50px;
+        margin: 0;
+    }
+
+    .info_blocks .item .icon + *
+    {
+        width: calc(100% - 70px);
+
+        align-self: center;
+    }
+
+    .info_blocks .item br
+    {
+        display: none;
+    }
+
+
+    .info_blocks .item.delivery .icon img,
+    .info_blocks .item.phone .icon img
+    {
+        height: 43px;
+    }
+
+    .info_blocks .item.vegan .icon img
+    {
+        height: auto;
+    }
+
+
+
+    /*---------------
+        Cart info
+    ---------------*/
+    .cart_info
+    {
+        padding-top: 10px;
+    }
+
+
+    .cart_info .min_price
+    {
+        font-size: 17px;
+        line-height: 21px;
+
+        min-height: 0;
+        padding: 15px 20px;
+
+        text-align: center;
+    }
+
+    .cart_info .min_price .continue_link
+    {
+        position: relative;
+        right: 0;
+        left: 0;
+
+        margin-top: 10px;
+    }
+
+
+    .cart_info .steps
+    {
+        margin-bottom: 15px;
+    }
+
+    .cart_info .steps .step
+    {
+        font-size: 19px;
+        line-height: 23px;
+
+        margin-bottom: 15px;
+    }
+
+    .cart_info .steps .step + .step
+    {
+        margin-left: 50px;
+    }
+
+
+    .cart_info .products table thead
+    {
+        display: none;
+    }
+
+
+    .cart_info .products table tr
+    {
+        position: relative;
+
+        display: flex;
+
+        padding: 20px;
+
+        justify-content: flex-start;
+        align-items: flex-start;
+        align-content: flex-start;
+        flex-wrap: wrap;
+    }
+
+    .cart_info .products table tr + tr
+    {
+        border-top: 1px dashed #dad0c4;
+    }
+
+    .cart_info .products table td
+    {
+        position: relative;
+
+        padding: 0;
+
+        border: none;
+    }
+
+
+    .cart_info .products table td.thumb
+    {
+        width: 100px;
+    }
+
+    .cart_info .products table td.info
+    {
+        width: calc(100% - 120px);
+        margin-left: 20px;
+        padding-right: 45px;
+    }
+
+    .cart_info .products table td.price,
+    .cart_info .products table td.amount
+    {
+        min-width: 58px !important;
+        margin-top: 15px;
+        padding-top: 24px;
+    }
+
+    .cart_info .products table td.price.total,
+    .cart_info .products table td.amount
+    {
+        margin-left: 50px;
+    }
+
+    .cart_info .products table td.delete
+    {
+        position: absolute;
+        top: 10px;
+        right: 10px;
+
+        width: auto;
+    }
+
+    .cart_info .products table td:before
+    {
+        color: #000;
+        font-size: 12px;
+        font-weight: normal;
+        line-height: 20px;
+
+        position: absolute;
+        top: 0;
+        left: 0;
+
+        display: block;
+
+        width: 100%;
+        height: 20px;
+
+        content: attr(data-column);
+        text-align: left;
+        white-space: nowrap;
+        letter-spacing: 0;
+        text-transform: none;
+
+        opacity: .4;
+    }
+
+
+
+    .cart_info .auth .data
+    {
+        padding: 20px 20px 30px;
+    }
+
+
+    .cart_info .auth > * > .text
+    {
+        font-size: 16px;
+        line-height: 22px;
+
+        margin-bottom: 20px;
+    }
+
+
+    .cart_info .auth .back
+    {
+        margin-top: 25px;
+    }
+
+
+
+    .cart_info .checkout .item .form
+    {
+        margin-bottom: 0;
+        margin-left: 0;
+    }
+
+
+    .cart_info .checkout .item .form .col
+    {
+        width: 100%;
+        margin-bottom: 0;
+        margin-left: 0;
+    }
+
+    .cart_info .checkout .item .form .col + .col
+    {
+        margin-top: 15px;
+    }
+
+
+    .cart_info .checkout .item .form .title
+    {
+        font-size: 20px;
+        line-height: 24px;
+
+        margin-bottom: 15px;
+    }
+
+    .cart_info .checkout .item .form * + .title
+    {
+        margin-top: 35px;
+    }
+
+
+
+    /*--------------
+        Products
+    --------------*/
+    .products .tabs button + button
+    {
+        margin-left: 5px;
+    }
+
+
+    .products .row,
+    .content .products .row
+    {
+        --products_count: 2;
+    }
+
+    .products .row > *,
+    .content .products .row > *
+    {
+        width: calc(50% - 20px);
+    }
+
+
+    .products .product .name
+    {
+        font-size: 15px;
+        line-height: 21px;
+    }
+
+    .products .product .amount
+    {
+        width: 80px;
+    }
+
+    .products .product .buy_btn
+    {
+        width: calc(100% - 100px);
+        min-width: 100px;
+    }
+
+
+    .products .banner .desc
+    {
+        color: #fff;
+    }
+
+    .products .banner .persents
+    {
+        top: 15px;
+        right: 15px;
+    }
+
+
+
+    /*------------------
+        Product info
+    ------------------*/
+    .product_info .mob_composition_btn
+    {
+        display: block;
+    }
+
+    .product_info .composition,
+    .product_info .composition .title
+    {
+        display: none;
+
+        margin-top: 16px;
+    }
+
+
+    .product_info .mob_daily_norm_btn
+    {
+        display: block;
+    }
+
+    .product_info .daily_norm
+    {
+        display: none;
+
+        margin-top: 16px;
+    }
+
+    .product_info .daily_norm .items > *
+    {
+        width: calc(25% - 1px);
+    }
+
+    .product_info .daily_norm .val > * + *
+    {
+        margin-top: 0;
+    }
+
+    .product_info .daily_norm .val b
+    {
+        font-size: 17px;
+    }
+
+
+    .product_info .buy .price
+    {
+        width: 100%;
+        margin-right: 0;
+        margin-bottom: 15px;
+    }
+
+
+    .product_info .description
+    {
+        margin-top: 40px;
+    }
+
+
+
+    /*-------------
+        LK info
+    -------------*/
+    .lk_info .tab_content > .data
+    {
+        padding: 30px;
+    }
+
+
+    .lk_info .tab_content > .data .form .cols
+    {
+        margin-left: 0;
+    }
+
+    .lk_info .tab_content > .data .form .col
+    {
+        width: 100%;
+        margin-bottom: 0;
+        margin-left: 0;
+    }
+
+    .lk_info .tab_content > .data .form .col + .col
+    {
+        margin-top: 15px;
+    }
+
+    .lk_info .tab_content > .data .form .title
+    {
+        font-size: 20px;
+        line-height: 24px;
+
+        margin-bottom: 15px;
+    }
+
+    .lk_info .tab_content > .data .form * + .title
+    {
+        margin-top: 35px;
+    }
+
+
+
+    .lk_info .orders .order .head .number,
+    .lk_info .orders .order .head .date,
+    .lk_info .orders .order .head .status
+    {
+        width: calc(33.333% - 14px);
+    }
+
+    .lk_info .orders .order .head .price
+    {
+        width: 100%;
+    }
+
+
+    .lk_info .orders .cart_info .products table td.amount span
+    {
+        font-size: 15px;
+        line-height: 23px;
+
+        width: 62px;
+    }
+
+
+
+    /*------------
+        Footer
+    ------------*/
+    footer .col_left
+    {
+        display: flex;
+
+        width: 100%;
+        margin-bottom: 30px;
+
+        justify-content: space-between;
+        align-items: center;
+        align-content: center;
+        flex-wrap: wrap;
+    }
+
+
+    footer .socials
+    {
+        width: 50%;
+        margin-top: 0;
+        padding-left: 50px;
+
+        justify-content: flex-start;
+    }
+
+
+    footer .links
+    {
+        width: calc(50% - 25px);
+    }
+
+    footer .contacts
+    {
+        width: 50%;
+    }
+
+
+    footer .time span
+    {
+        display: block;
+    }
+
+
+    footer .privacy_policy
+    {
+        margin-left: auto;
+    }
+
+
+    footer .creator
+    {
+        width: 100%;
+        margin-top: 10px;
+    }
+
+
+
+    /*-----------
+        PopUp
+    -----------*/
+    .fancybox-slide--html
+    {
+        padding: 20px;
+    }
+}
