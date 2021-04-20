@@ -805,10 +805,16 @@
     }
 
 
-    .product_info .info
+    .product_info .data .info
     {
         width: 100%;
         padding: 0;
+    }
+
+    .product_info .data .info .rating
+    {
+        top: 0;
+        right: 24px;
     }
 
     .product_info .composition,
@@ -914,6 +920,41 @@
         line-height: 22px;
 
         width: 85px;
+    }
+
+
+
+    /*-------------
+        Reviews
+    -------------*/
+    .reviews .review
+    {
+        padding-bottom: 28px;
+    }
+
+    .reviews .review + .review
+    {
+        margin-top: 28px;
+    }
+
+    .reviews .review.answer
+    {
+        margin-left: 48px;
+    }
+
+
+    .reviews .review .info
+    {
+        width: 192px;
+    }
+
+
+    .reviews .review .text_block,
+    .reviews .review.answer .text_block
+    {
+        line-height: 22px;
+
+        width: calc(100% - 216px);
     }
 
 

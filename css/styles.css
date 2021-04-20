@@ -287,6 +287,11 @@ button
     margin-right: var(--scroll_width) !important;
 }
 
+.compensate-for-scrollbar header.fixed
+{
+    padding-right: var(--scroll_width) !important;
+}
+
 
 .lozad
 {
@@ -4358,7 +4363,7 @@ aside .filter .reset_btn:hover
     flex-wrap: wrap;
 }
 
-.products .product .line + .line
+.products .product .line ~ .line
 {
     margin-top: 12px;
 }
@@ -4392,6 +4397,47 @@ aside .filter .reset_btn:hover
     margin-left: 10px;
 
     text-decoration: line-through;
+}
+
+
+.products .product .rating
+{
+    color: #574d42;
+    line-height: 22px;
+
+    display: flex;
+
+    margin-top: 4px;
+
+    justify-content: flex-start;
+    align-items: center;
+    align-content: center;
+    flex-wrap: wrap;
+}
+
+.products .product .rating .star
+{
+    display: block;
+
+    width: 16px;
+    height: 15px;
+
+    fill: #e4dcd3;
+}
+
+.products .product .rating .star + .star
+{
+    margin-left: 1px;
+}
+
+.products .product .rating .star.active
+{
+    fill: #f3bf38;
+}
+
+.products .product .rating span
+{
+    margin-left: 8px;
 }
 
 
@@ -5914,11 +5960,56 @@ aside .filter .reset_btn:hover
 
 
 
-.product_info .info
+.product_info .data .info
 {
+    position: relative;
+
     width: 50%;
     margin-left: auto;
     padding: 25px 0;
+}
+
+
+.product_info .data .info .rating
+{
+    color: #574d42;
+    line-height: 22px;
+
+    position: absolute;
+    top: 25px;
+    right: 32px;
+
+    display: flex;
+
+    justify-content: flex-start;
+    align-items: center;
+    align-content: center;
+    flex-wrap: wrap;
+}
+
+.product_info .data .info .rating .star
+{
+    display: block;
+
+    width: 16px;
+    height: 15px;
+
+    fill: #e4dcd3;
+}
+
+.product_info .data .info .rating .star + .star
+{
+    margin-left: 1px;
+}
+
+.product_info .data .info .rating .star.active
+{
+    fill: #f3bf38;
+}
+
+.product_info .data .info .rating span
+{
+    margin-left: 8px;
 }
 
 
@@ -6452,9 +6543,32 @@ aside .filter .reset_btn:hover
 
 
 
-.product_info .description
+.product_info .product_tabs
 {
     margin-top: 52px;
+}
+
+.product_info .product_tabs .tabs button
+{
+    color: #574d42;
+    font-family: var(--font_family2);
+    font-size: var(--font_size_title_small);
+    font-weight: normal;
+    line-height: var(--font_size_title_small);
+
+    height: auto;
+    padding: 0;
+}
+
+.product_info .product_tabs .tabs button + button
+{
+    margin-left: 52px;
+}
+
+.product_info .product_tabs .tabs button:hover,
+.product_info .product_tabs .tabs button.active
+{
+    color: #c72;
 }
 
 
@@ -7764,6 +7878,267 @@ aside .filter .reset_btn:hover
 .text_page
 {
     padding-top: 30px;
+}
+
+
+
+/*-------------
+    Reviews
+-------------*/
+.reviews .review
+{
+    display: flex;
+
+    padding-bottom: 32px;
+
+    border-bottom: 1px dashed #e4dcd3;
+
+    justify-content: space-between;
+    align-items: flex-start;
+    align-content: flex-start;
+    flex-wrap: wrap;
+}
+
+.reviews .review + .review
+{
+    margin-top: 32px;
+}
+
+
+.reviews .review .info
+{
+    width: 204px;
+    max-width: 100%;
+}
+
+
+.reviews .review .author
+{
+    color: #574d42;
+    font-size: 15px;
+    font-weight: 500;
+    line-height: 22px;
+}
+
+.reviews .review .date
+{
+    color: #ad8f73;
+    font-size: 15px;
+    line-height: 22px;
+
+    margin-top: 4px;
+}
+
+.reviews .review .rating
+{
+    color: #574d42;
+    line-height: 22px;
+
+    display: flex;
+
+    margin-top: 12px;
+
+    justify-content: flex-start;
+    align-items: center;
+    align-content: center;
+    flex-wrap: wrap;
+}
+
+.reviews .review .rating .star
+{
+    display: block;
+
+    width: 16px;
+    height: 15px;
+
+    fill: #e4dcd3;
+}
+
+.reviews .review .rating .star + .star
+{
+    margin-left: 1px;
+}
+
+.reviews .review .rating .star.active
+{
+    fill: #f3bf38;
+}
+
+.reviews .review .text_block
+{
+    width: calc(100% - 244px);
+    padding-right: 150px;
+}
+
+
+.reviews .review.answer
+{
+    margin-left: 86px;
+}
+
+.reviews .review.answer .text_block
+{
+    padding-right: 70px;
+}
+
+
+
+.reviews .need_auth
+{
+    color: #574d42;
+    font-size: 15px;
+    line-height: 22px;
+
+    display: flex;
+
+    width: 511px;
+    max-width: 100%;
+    height: 81px;
+    margin-top: 44px;
+    padding: 20px 24px;
+
+    text-align: center;
+
+    background: url(../images/bg_need_auth.png) 0 0/100% 100% no-repeat;
+
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    flex-wrap: wrap;
+}
+
+.reviews .need_auth button
+{
+    color: #c72;
+    font-size: inherit;
+    line-height: inherit;
+
+    margin-left: 5px;
+}
+
+
+
+.reviews .add_review
+{
+    width: 880px;
+    max-width: 100%;
+    margin-top: 64px;
+}
+
+.reviews .add_review .block_head
+{
+    margin-bottom: 24px;
+}
+
+.reviews .add_review .form
+{
+    --form_border_color: #e4dcd3;
+}
+
+.reviews .add_review .form .columns
+{
+    --form_columns_offset: 44px;
+}
+
+.reviews .add_review .form .label
+{
+    color: #574d42;
+    font-size: var(--font_size);
+    font-weight: 400;
+    line-height: 22px;
+
+    display: flex;
+
+    width: 82px;
+    height: 40px;
+    margin: 0;
+    padding-right: 12px;
+
+    justify-content: flex-start;
+    align-items: center;
+    align-content: center;
+    flex-wrap: wrap;
+}
+
+.reviews .add_review .form .line.row .field
+{
+    width: calc(100% - 82px);
+}
+
+.reviews .add_review .form .stars
+{
+    display: flex;
+    overflow: hidden;
+    flex-direction: row-reverse;
+
+    height: 40px;
+    padding-bottom: 2px;
+
+    justify-content: flex-end;
+    align-items: center;
+    align-content: center;
+}
+
+
+.reviews .add_review .form .stars > input
+{
+    display: none;
+}
+
+.reviews .add_review .form .stars > label
+{
+    display: block;
+
+    width: 28px;
+    height: 27px;
+    padding: 0;
+
+    cursor: pointer;
+}
+
+.reviews .add_review .form .stars > label:before,
+.reviews .add_review .form .stars > label:after
+{
+    display: none;
+}
+
+.reviews .add_review .form .stars > label > *
+{
+    display: block;
+
+    width: 28px;
+    height: 27px;
+
+    transition: fill .2s linear;
+
+    fill: #e4dcd3;
+}
+
+.reviews .add_review .form .stars > label ~ label
+{
+    margin-right: 4px;
+}
+
+.reviews .add_review .form .stars > input:checked ~ label > *,
+.reviews .add_review .form .stars > input:checked ~ label ~ label > *,
+.reviews .add_review .form .stars > input:not(:checked) ~ label:hover > *,
+.reviews .add_review .form .stars > input:not(:checked) ~ label:hover ~ label > *
+{
+    fill: #f3bf38;
+}
+
+.reviews .add_review .form .input,
+.reviews .add_review .form textarea
+{
+    border-width: 2px;
+    border-radius: 4px;
+    box-shadow: none;
+}
+
+.reviews .add_review .form .submit
+{
+    width: 300px;
+    max-width: 100%;
 }
 
 

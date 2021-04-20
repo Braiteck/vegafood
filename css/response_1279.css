@@ -744,7 +744,7 @@
 
 
 
-    .product_info .description
+    .product_info .product_tabs
     {
         margin-top: 50px;
     }
@@ -819,6 +819,17 @@
     .lk_info .orders .cart_info .products table td.price.total
     {
         min-width: 160px;
+    }
+
+
+
+    /*-------------
+        Reviews
+    -------------*/
+    .reviews .review .text_block,
+    .reviews .review.answer .text_block
+    {
+        padding-right: 0;
     }
 
 

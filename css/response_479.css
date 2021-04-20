@@ -124,7 +124,7 @@
     .form .columns > *.width1of3,
     .form .columns > *.width2of3
     {
-        width: calc(50% - var(--form_columns_offset));
+        width: calc(100% - var(--form_columns_offset));
     }
 
 
@@ -532,6 +532,23 @@
 
 
 
+    .product_info .product_tabs .tabs
+    {
+        margin-bottom: 24px;
+    }
+
+    .product_info .product_tabs .tabs button
+    {
+        width: 100%;
+    }
+
+    .product_info .product_tabs .tabs button + button
+    {
+        margin-top: 12px;
+    }
+
+
+
     /*-------------
         LK info
     -------------*/
@@ -546,6 +563,29 @@
     .lk_info .orders .order .head .status
     {
         margin-left: 0;
+    }
+
+
+
+    /*-------------
+        Reviews
+    -------------*/
+    .reviews .add_review .form .label,
+    .reviews .add_review .form .stars
+    {
+        height: auto;
+
+        align-self: center;
+    }
+
+    .reviews .add_review .form .line
+    {
+        margin-bottom: 16px;
+    }
+
+    .reviews .add_review .form .submit
+    {
+        width: 100%;
     }
 
 
@@ -632,4 +672,8 @@
     /*-----------
         PopUp
     -----------*/
+    .modal
+    {
+        padding: 40px 30px;
+    }
 }
